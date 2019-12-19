@@ -1,4 +1,4 @@
-w<?php
+<?php
 
 namespace Anax\View;
 
