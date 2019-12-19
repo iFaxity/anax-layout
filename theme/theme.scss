@@ -1,0 +1,23 @@
+/*!
+ * Default theme for website.
+ */
+$fa-font-path: '../webfonts' !default;
+
+@import 'normalize-scss/sass/normalize';
+@import '@fortawesome/fontawesome-free/scss/variables';
+@import '@fortawesome/fontawesome-free/scss/mixins';
+@import '@fortawesome/fontawesome-free/scss/core';
+@import '@fortawesome/fontawesome-free/scss/solid';
+
+// Theme variables
+$primary: #37474f !default;
+$primaryText: #fff !default;
+$secondary: #d81b60 !default;
+$secondaryText: #fff !default;
+$background: #dae3e7 !default;
+$maxContentWidth: 1500px !default;
+$footerColumns: 3 !default;
+
+// Import theme files
+@import 'base';
+@import 'layout';

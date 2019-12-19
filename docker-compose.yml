@@ -1,0 +1,7 @@
+version: "3"
+services:
+    cli:
+        build: ./
+        volumes:
+          - ./src:/home/anax/repo/src
+          - ./test:/home/anax/repo/test
