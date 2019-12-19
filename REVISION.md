@@ -3,6 +3,12 @@ Revision history
 
 
 
+v1.0.2 (2019-12-19)
+---------------------------------
+* Fixed issue in columns view
+
+
+
 v1.0.1 (2019-12-19)
 ---------------------------------
 * Updated README
