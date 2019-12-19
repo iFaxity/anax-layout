@@ -14,7 +14,14 @@ To install the package using composer:
 
 `composer require faxity/anax-layout`
 
-Then after that you need to rsync over the `view/, and optionally the theme/ folders`:
+Then after that you need to copy over the `view/`, and optionally the `theme/` folders.
+For example with rsync:
+
+```bash
+mkdir view/ rsync -av vendor/faxity/anax-layout/view view/
+mkdir theme && rsync -av vendor/faxity/anax-layout/theme/ theme/
+```
+
 Or if you use the `faxity/di-sorcery` as the DI manager, you can just add `faxity/anax-layout` to the sorcery config file.
 
 Then you need to update the `config/page.php` file to use the layout.
