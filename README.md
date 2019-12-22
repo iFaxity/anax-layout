@@ -18,11 +18,11 @@ Then after that you need to copy over the `view/`, and optionally the `theme/` f
 For example with rsync:
 
 ```bash
-mkdir view/ rsync -av vendor/faxity/anax-layout/view view/
+mkdir view/ && rsync -av vendor/faxity/anax-layout/view view/
 mkdir theme && rsync -av vendor/faxity/anax-layout/theme/ theme/
 ```
 
-Or if you use the `faxity/di-sorcery` as the DI manager, you can just add `faxity/anax-layout` to the sorcery config file.
+Or if you use the [faxity/di-sorcery](https://packagist.org/packages/faxity/di-sorcery) as the DI manager, you can just add `faxity/anax-layout` to the sorcery config file.
 
 Then you need to update the `config/page.php` file to use the layout.
 The normal template can be substituted like this:
@@ -66,4 +66,13 @@ To use it include it like this:
 ```scss
 // ./vendor assuming the main .scss file is in the root folder
 @import './vendor/faxity/anax-layout/theme/theme';
+```
+
+## Scripts
+
+Javascripts for the navbar are not automatically loaded and needs to be copied over.
+This can be done easily via i.e rsync:
+
+```bash
+rsync -av vendor/faxity/anax-layout/htdocs htdocs/
 ```
