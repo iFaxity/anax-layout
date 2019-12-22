@@ -6,7 +6,7 @@ faxity/anax-layout
 [![Code Coverage](https://scrutinizer-ci.com/g/iFaxity/anax-layout/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/iFaxity/anax-layout/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/iFaxity/anax-layout/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/iFaxity/anax-layout/?branch=master)
 
-An Anax module for a modern and simplified layout.
+An Anax module for a modern and simplified layout, also includes a nice flash DI module.
 
 ## Installation
 
@@ -14,7 +14,7 @@ To install the package using composer:
 
 `composer require faxity/anax-layout`
 
-Then after that you need to copy over the `view/`, and optionally the `theme/` folders.
+Then after that you need to copy over the `view/`, `/config`, and optionally the `theme/` folders.
 For example with rsync:
 
 ```bash
@@ -58,6 +58,29 @@ The normal template can be substituted like this:
 ],
 ```
 
+
+
+## Flash module
+
+The builtin flash module can be used to show flash messages to the user.
+Assuming the installation steps above have been followed correctly, it's already installed.
+To use it just use:
+
+```php
+//$di is the di package manager in Anax
+$di->flash->ok("ok message");
+$di->flash->warn("warning message");
+$di->flash->err("error message");
+
+// The flash messages by default are set in the session for the next request
+// However to set a flash message in the current request just set the second argument to true
+$di->flash->ok("immediate ok message", true);
+$di->flash->warn("immediate warning message", true);
+$di->flash->err("immediate error message", true);
+```
+
+
+
 ## SCSS Theming
 
 There is theming with default styles using SASS in the `theme/` folder of this module.
@@ -68,7 +91,9 @@ To use it include it like this:
 @import './vendor/faxity/anax-layout/theme/theme';
 ```
 
-## Scripts
+
+
+## Navbar javascript code
 
 Javascripts for the navbar are not automatically loaded and needs to be copied over.
 This can be done easily via i.e rsync:
