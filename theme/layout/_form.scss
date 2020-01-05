@@ -2,7 +2,8 @@
   Material like button
 */
 button,
-a.button {
+a.button,
+input[type=submit] {
   color: $secondary;
   border: none;
   outline: none;
