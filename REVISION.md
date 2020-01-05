@@ -3,6 +3,12 @@ Revision history
 
 
 
+v1.0.4 (2020-01-05)
+---------------------------------
+* Updated theme to style submit buttons
+
+
+
 v1.0.3 (2019-12-22)
 ---------------------------------
 * Added navbar javascript code
