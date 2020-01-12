@@ -3,6 +3,12 @@ Revision history
 
 
 
+v1.0.5 (2020-01-05)
+---------------------------------
+* Removed annoying img style and fixed flash di config
+
+
+
 v1.0.4 (2020-01-05)
 ---------------------------------
 * Updated theme to style submit buttons
