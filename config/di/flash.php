@@ -12,7 +12,7 @@ return [
                 $template = $cfg["config"]["template"];
                 $region = $cfg["config"]["region"] ?? null;
 
-                $flash = new \Faxity\DI\Flash($template, $region);
+                $flash = new \Faxity\Flash\Flash($template, $region);
                 $flash->setDI($this);
                 return $flash->render();
             },
