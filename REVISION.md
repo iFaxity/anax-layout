@@ -3,6 +3,12 @@ Revision history
 
 
 
+v1.0.6 (2020-01-16)
+---------------------------------
+* Fixed flash DI config and styles
+
+
+
 v1.0.5 (2020-01-12)
 ---------------------------------
 * Removed annoying img style and fixed flash di config
