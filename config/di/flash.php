@@ -6,6 +6,7 @@ return [
     // Services to add to the container.
     "services" => [
         "flash" => [
+            "active" => true,
             "shared" => true,
             "callback" => function () {
                 $cfg = $this->configuration->load("flash.php");
